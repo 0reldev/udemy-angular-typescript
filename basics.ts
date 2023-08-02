@@ -15,10 +15,13 @@ isInstructor = true;
 let hobbies: string[];
 hobbies = ['Sports', 'Cooking'];
 
-let person: {
+type Person = {
     name: string;
     age: number;
-};
+}
+// Personalized types can be declared.
+
+let person: Person;
 // An object structure can be declared as a type.
 
 person = {
@@ -30,10 +33,7 @@ person = {
 //     isEmployee: true;
 // }
 
-let people: {
-    name: string;
-    age: number;
-}[];
+let people: Person[];
 // Arrays of specific objects can be declared.
 
 // Type inference
