@@ -5,7 +5,7 @@
 // Primitives
 let age: number = 24;
 age = 12;
-let userName: string;
+let userName: string | string[];
 userName = 'Aurélien';
 let isInstructor: boolean;
 isInstructor = true;
@@ -37,7 +37,8 @@ let people: {
 // Arrays of specific objects can be declared.
 
 // Type inference
+let course: string | number = 'React - The Complete Guide';
+// Multiple types can be used for a single variable, thanks to the character '|'.
+// Here, the course parameter can be a string or a number.
 
-let course = 'React - The Complete Guide';
-// Here, as the variable has been initialized with a string value, the explicit typing would be redundant hence it's not needed in this case.
-// course = 123423;
+course = 123423;
