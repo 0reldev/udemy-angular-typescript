@@ -35,3 +35,9 @@ let people: {
     age: number;
 }[];
 // Arrays of specific objects can be declared.
+
+// Type inference
+
+let course = 'React - The Complete Guide';
+// Here, as the variable has been initialized with a string value, the explicit typing would be redundant hence it's not needed in this case.
+// course = 123423;
