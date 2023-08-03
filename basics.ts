@@ -42,3 +42,14 @@ let course: string | number = 'React - The Complete Guide';
 // Here, the course parameter can be a string or a number.
 
 course = 123423;
+
+// Functions & types
+function add2(a: number, b: number) {
+    return a + b;
+}
+// The type returned by a function can be defined like this: function test(a: number): string | number {return a;}
+
+function print(value: any) {
+    console.log(value);
+}
+// A function which doesn't return anything actually returns void.
