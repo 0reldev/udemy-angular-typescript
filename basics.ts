@@ -94,3 +94,30 @@ const student = new Student('Max', 'Schwarz', 32, ['Angular']);
 student.enrol('React');
 student.listCourses();
 // student.coruses ==> Angular, React
+
+interface Human {
+    firstName: string;
+    age: number;
+
+    greet: () => void;
+}
+
+let max: Human;
+
+max = {
+    firstName: 'Max',
+    age: 32,
+    greet() {
+        console.log('Hello!');
+    },
+};
+
+// In comparison with types, inferace can't be implemented by classes. Types can't.
+
+class Instructor implements Human {
+    firstName: string;
+    age: number;
+    greet() {
+        console.log('Hello!!!');
+    }
+}
